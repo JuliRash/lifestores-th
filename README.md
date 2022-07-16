@@ -36,5 +36,21 @@ make sure you have built the application
   docker-compose  run django  python manage.py test
 ```
 
+Access Application URL
+
 [http://localhost:8050](http://localhost:8050)
 
+
+Graphql Query Example
+
+```json
+      query {
+        allProducts {
+          id
+          name
+          sku
+          price
+          image
+        }
+      }
+```

@@ -17,7 +17,6 @@ class APITestCase(TestCase):
         self.assertIn('uccessfully imported products data', out.getvalue())
         
 
-
 class DataTestCase(GraphQLTestCase):
 
     def setUp(self):
@@ -61,4 +60,3 @@ class DataTestCase(GraphQLTestCase):
         
         # This validates if the allProducts object is not empty
         self.assertNotEquals(content['data']['allProducts'], [])
-
